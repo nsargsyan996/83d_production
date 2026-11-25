@@ -111,11 +111,12 @@ html.js .line path { --draw: clamp(0, (var(--p, .5) - .15) * 1.8, 1); }
   transform: translateY(calc((var(--p, .5) - .5) * var(--spd, 0) * 100vh)) rotate(calc((var(--p, .5) - .5) * var(--rot, 0deg))); will-change: transform; }
 
 /* 1. hero */
-.hero { position: relative; min-height: 100svh; padding: calc(var(--hd) + 24px) 0 48px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+.hero-hold { position: relative; height: 150svh; }
+.hero { position: sticky; top: 0; height: 100svh; min-height: 560px; padding: calc(var(--hd) + 24px) 0 48px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
 .rows { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr); }
 .row { min-width: 0; display: flex; justify-content: center; gap: .22em; white-space: nowrap;
   font: 900 clamp(40px, 8.4vw, 150px)/0.98 var(--display); text-transform: uppercase; letter-spacing: -0.01em;
-  transform: translateX(calc((var(--p, .5) - .5) * var(--dir) * -60vw)); will-change: transform; }
+  transform: translateX(calc((var(--p, .5) - .5) * var(--dir) * -60vw + var(--q, 0) * var(--dir) * -8vw)); will-change: transform; }
 :root:lang(hy) .row { font-size: clamp(30px, 5.6vw, 100px); }
 .w { color: transparent; -webkit-text-stroke: 2px var(--ink); }
 .w--solid { color: var(--ink); -webkit-text-stroke: 0; }
@@ -276,7 +277,8 @@ html.js .line--fill path { --draw: clamp(0, (var(--p, .5) - .2) * 1.6, 1); }
 .ft__big a:hover, .ft__big a:focus-visible { color: var(--navy); -webkit-text-stroke-color: var(--navy); }
 .ft__row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; width: 100%; }
 .ft__logo { height: 54px; width: auto; filter: brightness(0) saturate(100%); }
-.ft__contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 28px; font-weight: 700; }
+.ft__contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-weight: 700; }
+.ft__contact li { display: flex; align-items: center; min-height: 44px; line-height: 1; }
 .ft__contact a { display: inline-flex; min-height: 44px; align-items: center; }
 .ft__legal { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; width: 100%; font-size: 14px; border-top: 1px solid rgba(18,23,29,.25); padding-top: 16px; }
 
