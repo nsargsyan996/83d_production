@@ -1,6 +1,6 @@
 # 83D Production
 
-**Custom 3D printing in Yerevan** · [83d.am](https://83d.am)
+**Custom 3D printing in Yerevan** · [83d.store](https://83d.store)
 
 We print personal gifts, branded souvenirs and decor from your idea, a sketch or a 3D file.
 Orders start at a single piece, and we confirm the price and the date before anything is printed.
@@ -25,6 +25,6 @@ Orders start at a single piece, and we confirm the price and the date before any
 - Email: [info@83d.am](mailto:info@83d.am)
 - Yerevan, Armenia
 
-The site is available in [English](https://83d.am), [Russian](https://83d.am/ru/) and [Armenian](https://83d.am/hy/).
+The site is available in [English](https://83d.store), [Russian](https://83d.store/ru/) and [Armenian](https://83d.store/hy/).
 
 © 83D Production. Your imagination. Our creation.
